@@ -1,5 +1,10 @@
 # Running all test from Selenium C# example
 
+Prerequisite: Install .NET
+- This link covers all cross-platform installation steps
+
+https://learn.microsoft.com/en-us/dotnet/core/install/ 
+
 Follow these steps to run all test examples from selenium C#
 
 1. Clone this repository
