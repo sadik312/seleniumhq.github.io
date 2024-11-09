@@ -323,7 +323,97 @@ first name text box. Let us create locator for female radio button using xpath.
   {{< /tab >}}
 {{< /tabpane >}} 
 
+## Utilizing Locators
 
+The FindElement makes using locators a breeze! For most languages, 
+all you need to do is utilize `webdriver.common.by.By`, however in 
+others it's as simple as setting a parameter in the FindElement function
+
+### By
+
+{{< tabpane langEqualsHeader=true >}}
+{{< badge-examples >}}
+  {{< tab header="Java" >}}
+    import org.openqa.selenium.By;
+    WebDriver driver = new ChromeDriver();
+	driver.findElement(By.className("information"));
+  {{< /tab >}}
+  {{< tab header="Python" >}}
+    from selenium.webdriver.common.by import By
+    driver = webdriver.Chrome()
+	driver.find_element(By.CLASS_NAME, "information")
+  {{< /tab >}}
+  {{< tab header="CSharp" >}}
+    var driver = new ChromeDriver();
+	driver.FindElement(By.ClassName("information"));
+  {{< /tab >}}
+  {{< tab header="Ruby" text=true >}}
+{{< gh-codeblock path="examples/ruby/spec/elements/locators_spec.rb#L7" >}}
+  {{< /tab >}}
+  {{< tab header="JavaScript" >}}
+    let driver = await new Builder().forBrowser('chrome').build();
+	const loc = await driver.findElement(By.className('information'));
+  {{< /tab >}}
+  {{< tab header="Kotlin" >}}
+    import org.openqa.selenium.By
+    val driver = ChromeDriver()
+	val loc: WebElement = driver.findElement(By.className("information"))
+  {{< /tab >}}
+{{< /tabpane >}} 
+
+### ByChained
+
+The `ByChained` class enables you to _chain_ two By locators together. For example, 
+instead of having to locate a parent element, and then a child element of that parent, 
+you can instead combine those two `FindElement` functions into one.
+
+{{< tabpane langEqualsHeader=true >}}
+  {{< tab header="Java" text=true >}}
+    {{< gh-codeblock path="/examples/java/src/test/java/dev/selenium/elements/LocatorsTest.java#L37-L38" >}}
+  {{< /tab >}}
+  {{< tab header="Python" text=true >}}
+  {{< badge-code >}}
+  {{< /tab >}}
+  {{< tab header="CSharp" text=true >}}
+  {{< badge-code >}}
+  {{< /tab >}}
+  {{< tab header="Ruby" text=true >}}
+  {{< badge-code >}}
+  {{< /tab >}}
+  {{< tab header="JavaScript" text=true >}}
+  {{< badge-code >}}
+  {{< /tab >}}
+  {{< tab header="Kotlin" text=true >}}
+    {{< badge-code >}}
+  {{< /tab >}}
+{{< /tabpane >}} 
+
+### ByAll
+
+The `ByAll` class enables you to utilize two By locators at once, finding elements that mach _either_ of your By locators. 
+For example, instead of having to utilize two `FindElement()` functions to find the username and password input fields 
+seperately, you can instead find them together in one clean `FindElements()`
+
+{{< tabpane langEqualsHeader=true >}}
+  {{< tab header="Java" text=true >}}
+    {{< gh-codeblock path="/examples/java/src/test/java/dev/selenium/elements/LocatorsTest.java#L22-L23">}}
+  {{< /tab >}}
+  {{< tab header="Python" text=true >}}
+  {{< badge-code >}}
+  {{< /tab >}}
+  {{< tab header="CSharp" text=true >}}
+  {{< badge-code >}}
+  {{< /tab >}}
+  {{< tab header="Ruby" text=true >}}
+  {{< badge-code >}}
+  {{< /tab >}}
+  {{< tab header="JavaScript" text=true >}}
+  {{< badge-code >}}
+  {{< /tab >}}
+  {{< tab header="Kotlin" text=true >}}
+    {{< badge-code >}}
+  {{< /tab >}}
+{{< /tabpane >}} 
 
 ## Relative Locators
 
