@@ -365,9 +365,9 @@ Chrome Castデバイスを操作することができ、タブの共有も含ま
 {{< tab header="Java" >}}
 {{< badge-code >}}
 {{< /tab >}}
-{{% tab header="Python" %}}
-{{< badge-code >}}
-{{% /tab %}}
+{{< tab header="Python" >}}
+{{< gh-codeblock path="/examples/python/tests/browsers/test_chrome.py#L170-L174" >}}
+{{< /tab >}}
 {{< tab header="CSharp" >}}
 {{< badge-code >}}
 {{< /tab >}}
@@ -390,7 +390,7 @@ Chrome Castデバイスを操作することができ、タブの共有も含ま
 
 {{< tabpane text=true >}}
 {{< tab header="Java" >}}
-{{< badge-code >}}
+{{< gh-codeblock path="examples/java/src/test/java/dev/selenium/browsers/ChromeTest.java#L204-L210" >}}
 {{< /tab >}}
 {{< tab header="Python" >}}
 {{< gh-codeblock path="/examples/python/tests/browsers/test_chrome.py#L129-L135" >}}
@@ -436,11 +436,11 @@ Chrome Castデバイスを操作することができ、タブの共有も含ま
 
 {{< tabpane text=true >}}
 {{< tab header="Java" >}}
-{{< badge-code >}}
+{{< gh-codeblock path="examples/java/src/test/java/dev/selenium/browsers/ChromeTest.java#L189" >}}
 {{< /tab >}}
-{{% tab header="Python" %}}
-{{< badge-code >}}
-{{% /tab %}}
+{{< tab header="Python" >}}
+{{< gh-codeblock path="/examples/python/tests/browsers/test_chrome.py#L149" >}}
+{{< /tab >}}
 {{< tab header="CSharp" >}}
 {{< badge-code >}}
 {{< /tab >}}
